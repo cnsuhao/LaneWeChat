@@ -10,6 +10,7 @@ namespace LaneWeChat\Core;
  * Website: http://www.lanecn.com
  */
 class AccessToken{
+
     /**
      * 获取微信Access_Token
      */
