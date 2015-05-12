@@ -6,7 +6,7 @@
 
 版本要求：原则PHP5.3以上
 
-版本规避：若版本低于PHP5.3，则删除本框架所有页面开头“namespace”的行、删除本框架中所有的“use LaneWeChat”开头的行，删除“LaneWeChat\Core”即可。
+版本规避：若版本低于PHP5.3，则删除本框架所有页面开头“namespace”的行、删除本框架中所有的“use LaneWeChat”开头的行，删除“LaneWeChat\Core”，修改Autoloader::NAMESPACE_PREFIX=''，修改curl.lib.php的\Exception为Exception即可。
 
 命名空间：本框架的命名空间均为LaneWeChat开头。
 
@@ -38,7 +38,7 @@
 
         1、解决CURL的GET调用在php5.3以下时出现errno=60(CA证书无效)的BUG。（解决人：大志<229417598@qq.com>）
 
-        2、文档、注视优化。（zhulin3141）
+        2、文档、注释优化。（zhulin3141）
 
         3、实战演练 - 添加微信自定义菜单 文档场景描述错误
 
